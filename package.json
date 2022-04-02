@@ -1,5 +1,5 @@
 {
-  "name": "auto-trade-models",
+  "name": "@byun618/auto-trade-models",
   "version": "0.0.1",
   "main": "dist/index.js",
   "repository": "https://github.com/byun618/auto-trade-models.git",
