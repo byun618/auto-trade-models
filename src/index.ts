@@ -1,8 +1,6 @@
-import { UserTickerLog, IUserTickerLog } from './models/user-ticker-logs'
-import { UserTicker, IUserTicker } from './models/user-tickers'
-import { User, IUser } from './models/users'
-
 import { connect } from 'mongoose'
+import { UserProgram, UserProgramInterface } from './models/user-programs'
+import { User, UserInterface } from './models/users'
 
 if ((process.env.VERSION as string) !== 'DEV') {
   connect(
@@ -14,4 +12,4 @@ if ((process.env.VERSION as string) !== 'DEV') {
   console.log('dev mongoDB connected')
 }
 
-export { UserTickerLog, IUserTickerLog, UserTicker, IUserTicker, User, IUser }
+export { User, UserInterface, UserProgram, UserProgramInterface }
