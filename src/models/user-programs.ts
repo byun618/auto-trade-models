@@ -9,6 +9,7 @@ interface Ticker {
 
 export interface UserProgramInterface extends Document {
   user: PopulatedDoc<UserInterface>
+  no: number
   ticker: Ticker
   startTime: number
   timeInterval: number
@@ -21,6 +22,7 @@ const schema = new Schema<UserProgramInterface>(
   {
     user: { type: Schema.Types.ObjectId, ref: 'User' },
     ticker: Object,
+    no: Number,
     startTime: Number,
     timeInterval: Number,
     createdAt: String,
