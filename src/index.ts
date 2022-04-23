@@ -1,5 +1,9 @@
 import { connect } from 'mongoose'
-import { UserProgram, UserProgramInterface } from './models/user-programs'
+import { UserProgram, UserProgramInterface } from './models/user-program'
+import {
+  UserProgramLog,
+  UserProgramLogInterface,
+} from './models/user-program-log'
 import { User, UserInterface } from './models/users'
 
 if ((process.env.VERSION as string) !== 'DEV') {
@@ -12,4 +16,11 @@ if ((process.env.VERSION as string) !== 'DEV') {
   console.log('dev mongoDB connected')
 }
 
-export { User, UserInterface, UserProgram, UserProgramInterface }
+export {
+  User,
+  UserInterface,
+  UserProgram,
+  UserProgramInterface,
+  UserProgramLog,
+  UserProgramLogInterface,
+}
