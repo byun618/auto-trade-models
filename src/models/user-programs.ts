@@ -13,9 +13,15 @@ export interface UserProgramInterface extends Document {
   ticker: Ticker
   startTime: number
   timeInterval: number
+  buyTime: string
+  sellTime: string
+  started: boolean
+  targetPrice: number
+  isHold: boolean
+  isSell: boolean
 
-  createdAt: boolean
-  updatedAt: boolean
+  createdAt: string
+  updatedAt: string
 }
 
 const schema = new Schema<UserProgramInterface>(
@@ -25,6 +31,13 @@ const schema = new Schema<UserProgramInterface>(
     no: Number,
     startTime: Number,
     timeInterval: Number,
+    buyTime: String,
+    sellTime: String,
+    started: Boolean,
+    targetPrice: Number,
+    isHold: Boolean,
+    isSell: Boolean,
+
     createdAt: String,
     updatedAt: String,
   },
