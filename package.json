@@ -1,6 +1,6 @@
 {
   "name": "@byun618/auto-trade-models",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "repository": "https://github.com/byun618/auto-trade-models.git",
   "author": "byun618 <byun618@gmail.com>",
