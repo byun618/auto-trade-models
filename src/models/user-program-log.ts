@@ -12,9 +12,6 @@ const schema = new Schema<UserProgramLogInterface>(
   {
     userProgram: { type: Schema.Types.ObjectId, ref: 'UserProgram' },
     message: String,
-
-    createdAt: String,
-    updatedAt: String,
   },
   { timestamps: true },
 )

@@ -37,9 +37,6 @@ const schema = new Schema<UserProgramInterface>(
     targetPrice: Number,
     isHold: Boolean,
     isSell: Boolean,
-
-    createdAt: String,
-    updatedAt: String,
   },
   { timestamps: true },
 )

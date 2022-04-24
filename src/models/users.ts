@@ -14,8 +14,6 @@ const schema = new Schema<UserInterface>(
     name: String,
     email: String,
     password: String,
-    createdAt: String,
-    updatedAt: String,
   },
   { timestamps: true },
 )
