@@ -4,6 +4,10 @@ import {
   UserProgramLog,
   UserProgramLogInterface,
 } from './models/user-program-log'
+import {
+  UserProgramTrade,
+  UserProgramTradeInterface,
+} from './models/user-program-trade'
 import { User, UserInterface } from './models/users'
 
 if ((process.env.VERSION as string) !== 'DEV') {
@@ -23,4 +27,6 @@ export {
   UserProgramInterface,
   UserProgramLog,
   UserProgramLogInterface,
+  UserProgramTrade,
+  UserProgramTradeInterface,
 }

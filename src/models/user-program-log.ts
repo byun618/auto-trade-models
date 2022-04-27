@@ -1,7 +1,8 @@
 import { Document, Schema, model, PopulatedDoc } from 'mongoose'
+import { UserProgramInterface } from './user-program'
 
 export interface UserProgramLogInterface extends Document {
-  userProgram: PopulatedDoc<UserProgramLogInterface>
+  userProgram: PopulatedDoc<UserProgramInterface>
   message: string
 
   createdAt: string
