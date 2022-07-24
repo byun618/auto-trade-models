@@ -1,4 +1,5 @@
 import { connect } from 'mongoose'
+import { Symbol, SymbolInterface } from './models/symbol'
 import { UserProgram, UserProgramInterface } from './models/user-program'
 import {
   UserProgramLog,
@@ -8,6 +9,7 @@ import {
   UserProgramTrade,
   UserProgramTradeInterface,
 } from './models/user-program-trade'
+import { UserSymbol, UserSymbolInterface } from './models/user-symbol'
 import { User, UserInterface } from './models/users'
 
 if ((process.env.VERSION as string) !== 'DEV') {
@@ -29,4 +31,8 @@ export {
   UserProgramLogInterface,
   UserProgramTrade,
   UserProgramTradeInterface,
+  Symbol,
+  SymbolInterface,
+  UserSymbol,
+  UserSymbolInterface,
 }
